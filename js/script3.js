@@ -20,6 +20,7 @@ const somma = function() {
     // Creo la variabile numeriDaGenerare per dare un massimo di numeri 
     const numeriDaGenerare = 10;
     document.querySelector('.output-somma').innerHTML = '';
+    let listaNumeri = document.querySelector('.lista-numeri');
     let risultatoSomma = document.querySelector('.output-somma');
 
     for(let i = 0; i <= numeriDaGenerare; i++) {
@@ -31,7 +32,8 @@ const somma = function() {
         if(i % 2 != 0) {
             dispari += arrNumeri[i];
         }
-
+    
+    listaNumeri.innerHTML = arrNumeri;
     risultatoSomma.innerHTML = 'La somma di tutti gli elementi che sono in posizioni dispari è: ' + dispari;
     }
 
