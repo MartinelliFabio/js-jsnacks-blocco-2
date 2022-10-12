@@ -1,0 +1,69 @@
+/* ! Utility */
+:root {
+    --bg: #f2e9e4;
+    --button: #4a4e69;
+    --dark-blue: #22223b;
+    --button-hover: #9a8c98;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+nav {
+    background-color: var(--dark-blue);
+}
+
+/* ! Navbar */
+ul>li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+/* ! CSS dell'html dello snack */
+.container-form {
+    width: 850px;
+    height: 450px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+}
+
+/* ! CSS specifico dell'html dello snack */
+.snacks2 {
+    width: 850px;
+    height: 650px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+}
+
+.form {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+input {
+    border: 1px solid var(--bg);
+    width: 100%;
+    height: 40px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--button);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ! Hover */
+span:hover {
+    color: var(--button-hover);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transition: 0.3s;
+}

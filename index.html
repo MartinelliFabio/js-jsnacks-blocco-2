@@ -10,23 +10,35 @@
 </head>
 <body>
 
-<!-- Html dello Snack1 -->
-<h2>Inserisci un numero da stampare</h2>
-<input type="number" id="inputUser">
-<button>Stampa Numero</button>
-<div class="output-number"></div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand fs-1 fw-bold text-white" href="#"><span>Jsnacks Blocco</span></a>
+        <div class="me-auto" id="navbarNav">
+        <ul class="d-flex mt-4 fs-6">
+            <li class="nav-item">
+                <a class="fw-bold text-white" href="#"><span>Snack1</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="fw-bold text-white" href="./page/snack2.html"><span>Snack2</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="fw-bold text-white" href="./page/snacks3.html"><span>Snack3</span></a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
 
-<!-- Html dello Snack2 -->
-<h2>Lista invitati alla festa del Grande Gatsby</h2>
-<button class="btn-invitati">Stampa lista invitati</button>
-<div class="d-flex flex-column">
-    <p class="output-lista"></p>
-</div>
-
-<!-- Html dello Snack3 -->
-<h2>Stampa la somma dei numeri nella posizione dispari</h2>
-<button class="btn-somma">Somma</button>
-<div class="output-somma"></div>
+    <!-- Html dello Snack1 -->
+    <div class="container text-center container-form d-flex flex-column text-white mt-5">
+        <div class="form">
+            <h2 class="fw-bold">Inserisci un numero da stampare</h2>
+            <input type="number" id="inputUser">
+            <button class="btn-number my-3 text-white fw-bold text-uppercase">Stampa Numero</button>
+            <p class="output-number fw-bold fs-4"></p>
+        </div>
+    </div>
 
 <script src="./js/script.js">
 
