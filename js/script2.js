@@ -21,21 +21,31 @@ const stampList = function() {
 
     // Lista Cognomi
     let cognome = ['Martinelli', 'Giorgetti', 'Rossi', 'Verdi', 'Bianchini', 'Bravetti', 'Bagiacchi'];
+
+    let listaNomiUsati = [];
+    let listaCognnomiUsati = [];
     
-    // Ciclo for
-    for(let i = 0; i < 8; i++) {
-        let listaRandom = Math.floor(Math.random()*nome.length); // lista random dei nomi
-        let listaRandom2 = Math.floor(Math.random()*cognome.length); // lista random dei cognomi
+    while(arrInvitati.length < nome.length && arrInvitati.length < cognome.length) {
+        const listaRandom = Math.floor(Math.random()*nome.length);
+        const listaRandom2 = Math.floor(Math.random()*cognome.length);
         
         let listaNomi = nome[listaRandom];
         let listaCognomi = cognome[listaRandom2];
 
-        arrInvitati.push(listaNomi + ' ' + listaCognomi);
+        let elemento = listaNomi + ' ' + listaCognomi;
 
-        let lista = document.createElement('p');
-        document.querySelector('.output-lista').append(lista);
+        console.log(listaNomi, listaCognomi, elemento, arrInvitati);
 
-        lista.innerHTML = arrInvitati[i];
+        if(!listaNomiUsati.includes(listaNomi) && !listaCognnomiUsati.includes(listaCognomi)){
+            listaNomiUsati.push(listaNomi);
+            listaCognnomiUsati.push(listaCognomi);
+            arrInvitati.push(elemento);
+
+            let lista = document.createElement('p');
+            document.querySelector('.output-lista').append(lista);
+
+            lista.innerHTML = elemento;
+        }
     }
     arrInvitati = [];
 }
